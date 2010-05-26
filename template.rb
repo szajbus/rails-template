@@ -45,5 +45,8 @@ END
 git :add => "."
 git :commit => "-m 'Initial commit'"
 
+# Copy database.yml.example to database.yml
+run "cp config/database.yml.example config/database.yml"
+
 # Done
 puts "SUCCESS!"
